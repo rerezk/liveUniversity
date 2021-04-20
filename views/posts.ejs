@@ -93,7 +93,7 @@
             var page_span = document.getElementById("pageSpan");
             var card = document.getElementById("card");
             var card_nome = document.getElementById("card_name")
-            var card_email = document.getElementById("card_email")
+            
             var card_comentario = document.getElementById("card_comentario")
             var card_hora = document.getElementById("card_hora")
             
@@ -105,14 +105,14 @@
             listing_table.innerHTML = "";
     
             for (var i = (page - 1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++) {
-                var nome_atual = "autor: " + objJson[i].nome
-                var email_atual = "email: " + objJson[i].email
+                var nome_atual = "autor: " + objJson[i].nome + " (" + objJson[i].email + ")"
+                //var email_atual = "email: " + 
                 var horario = objJson[i].data_entrada + " - " + objJson[i].horario
 
                 var comentario_atual = objJson[i].comentario
                 
                 card_nome.innerHTML = nome_atual
-                card_email.innerHTML = email_atual
+                
                 card_comentario.innerHTML = comentario_atual
                 card_hora.innerHTML = horario
 

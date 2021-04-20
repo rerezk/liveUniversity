@@ -70,4 +70,13 @@ textarea {
 
   .card {
     margin-bottom: 5px;
+    box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+  }
+
+  .card-footer {
+    font-size: small;
+  }
+
+  .description {
+    padding: 5px;
   }
